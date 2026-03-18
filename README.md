@@ -40,6 +40,12 @@ The tool produces high-fidelity HTML reports designed for senior investigators a
 Run from an **Administrative PowerShell terminal**:
 
 ```powershell
+# Enable file for execution
+Unblock-File .\telemetry_windows.ps1
+
+# Bypass the police for execution
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 # Standard execution (includes standard forensic collection)
 .\telemetry_windows.ps1
 
